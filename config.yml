@@ -1,0 +1,8 @@
+# ExecuteCommandFromSocket config
+
+# Usage: Key Command Args
+
+# receive port
+port: 8081
+# key
+key: 123456
