@@ -1,3 +1,9 @@
-name: ExecuteCommandFromSocket
+name: CommandExecutor
 main: io.github.hyx2771347351.ExecuteCommandFromSocket
 version: 1.0-SNAPSHOT
+commands:
+  commandexecutor:
+    description: The command of CommandExecutor
+    usage: /<command>
+    permission: <plugin name>.command
+    permission-message: You don't have permission

@@ -25,6 +25,23 @@ public final class ExecuteCommandEventListener implements Listener {
         }
         catch (Exception e) {
             e.printStackTrace();
+            try {
+                if (inputStream != null)
+                    inputStream.close();
+                if (inputStreamReader != null)
+                    inputStreamReader.close();
+                if (bufferedReader != null)
+                    bufferedReader.close();
+                if (outputStream != null)
+                    outputStream.close();
+                if (printWriter != null)
+                    printWriter.close();
+                if (event.getSocketHandler() != null)
+                    event.closeSocketHandler();
+            }
+            catch (Exception exception) {
+                exception.printStackTrace();
+            }
         }
         finally {
             try {
