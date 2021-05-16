@@ -1,4 +1,4 @@
 # Minecraft-Spigot-Plugin-ExecuteCommand
-Execute some commands from socket receive
+Receive some commands and execute them in Minecraft
 
 There are some errors in this plugin!
